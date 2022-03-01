@@ -3,11 +3,14 @@ html {
 }
 
 * {
+  cursor: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
+  background: #1a1a1a;
+  color: white;
   height: 100vh;
   margin: 0;
   font-family: "Nunito";
@@ -20,12 +23,48 @@ section {
 }
 
 section:nth-of-type(2) {
-  background: #0099ff;
-  color: white;
+  background: #002842;
 }
 
 #custom {
   width: 500px;
   height: 500px;
+}
+
+.inner-cursor {
+  position: fixed;
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #dbdbdb;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow {
+  width: 100px;
+  height: 100px;
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor {
+  position: fixed;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #ebebeb;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transition: 80ms;
+  transition: 80ms;
 }
 /*# sourceMappingURL=main.css.map */

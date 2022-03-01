@@ -6963,11 +6963,35 @@ var _smoothScrollbar = _interopRequireDefault(require("smooth-scrollbar"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var options = {
-  'damping': 0.3,
-  'alwaysShowTracks': true
+  'damping': 0.3
 };
 
 _smoothScrollbar.default.init(document.querySelector('#scrollbar'), options);
+
+var innerCursor = document.querySelector('.inner-cursor');
+var outerCursor = document.querySelector('.outer-cursor');
+document.addEventListener('mousemove', moveCursor);
+
+function moveCursor(e) {
+  var x = e.clientX;
+  var y = e.clientY; // console.log(x, y);
+
+  innerCursor.style.left = "".concat(x, "px");
+  innerCursor.style.top = "".concat(y, "px");
+  outerCursor.style.left = "".concat(x, "px");
+  outerCursor.style.top = "".concat(y, "px");
+}
+
+var highlightTexts = Array.from(document.querySelectorAll('.special-highlight'));
+var specialTxt = Array.from(document.querySelectorAll('.special-highlight'));
+specialTxt.forEach(function (txt) {
+  txt.addEventListener('mouseover', function () {
+    innerCursor.classList.add("grow");
+  });
+  txt.addEventListener('mouseleave', function () {
+    innerCursor.classList.remove("grow");
+  });
+});
 },{"smooth-scrollbar":"../node_modules/smooth-scrollbar/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -6996,7 +7020,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "7037" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1055" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
