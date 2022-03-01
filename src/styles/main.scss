@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: "Nunito";
+    font-size: 2em;
+
+}
+section{
+    padding: 8em;
+    height: 100vh;
+
+}
+section:nth-of-type(2){
+    background: rgb(0, 153, 255);
+    color: white;
+}
+#custom {
+    width: 500px;
+    height: 500px;
+}
