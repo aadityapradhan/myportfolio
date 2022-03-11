@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"../internals/redefine","loc":{"line":1,"column":23}}],"generated":{"js":"var redefine = require('../internals/redefine');\n\nmodule.exports = function (target, src, options) {\n  for (var key in src) redefine(target, key, src[key], options);\n  return target;\n};\n"},"hash":"e6c450c7e3dab6376f24285f103686cd"}

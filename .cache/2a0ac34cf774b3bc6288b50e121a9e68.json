@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"../internals/native-symbol","loc":{"line":2,"column":28}}],"generated":{"js":"/* eslint-disable es/no-symbol -- required for testing */\nvar NATIVE_SYMBOL = require('../internals/native-symbol');\n\nmodule.exports = NATIVE_SYMBOL\n  && !Symbol.sham\n  && typeof Symbol.iterator == 'symbol';\n"},"hash":"efbd2a256c8402707c2dcc6b45d80ba8"}

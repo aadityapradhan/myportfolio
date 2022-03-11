@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"../internals/is-callable","loc":{"line":1,"column":25}}],"generated":{"js":"var isCallable = require('../internals/is-callable');\n\nmodule.exports = function (it) {\n  return typeof it == 'object' ? it !== null : isCallable(it);\n};\n"},"hash":"b93364c1d13a21f4e11a96504283f3a5"}

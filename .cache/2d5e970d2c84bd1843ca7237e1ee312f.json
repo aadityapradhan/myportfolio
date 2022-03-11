@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"// eslint-disable-next-line es/no-object-getownpropertysymbols -- safe\nexports.f = Object.getOwnPropertySymbols;\n"},"hash":"db7d96f48241406aff75d62d01848c83"}

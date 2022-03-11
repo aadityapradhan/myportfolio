@@ -1,0 +1,79 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  cursor: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  background: #1a1a1a;
+  color: white;
+  height: 100vh;
+  margin: 0;
+  font-family: "Nunito";
+  font-size: 2em;
+}
+
+.cta {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  width: 1em;
+}
+
+section {
+  padding: 8em;
+  height: 100vh;
+}
+
+section:nth-of-type(2) {
+  background: #002842;
+}
+
+.cursor {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
+  -webkit-box-shadow: 0px 0px 15px -5px white;
+          box-shadow: 0px 0px 15px -5px white;
+  mix-blend-mode: difference;
+}
+
+.cursor-f {
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42.4202 42.4202C38.8403 46 33.3594 46 23.5 46C13.6406 46 8.15966 46 4.57983 42.4202C1 38.8403 1 33.3594 1 23.5C1 13.6406 1 8.15966 4.57983 4.57983C8.15966 1 13.6406 1 23.5 1C33.3594 1 38.8403 1 42.4202 4.57983C46 8.15966 46 13.6406 46 23.5C46 33.3594 46 38.8403 42.4202 42.4202Z' stroke='white'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  opacity: .5;
+}
+/*# sourceMappingURL=main.css.map */
