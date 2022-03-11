@@ -1,6 +1,7 @@
 import Scrollbar from "smooth-scrollbar";
 import { gsap } from "gsap";
 import '../src/styles/main.scss';
+import easing from 'easing-js';
 
 
 
@@ -22,6 +23,16 @@ verticalScrollbar.addListener((s) => {
 });
 
 
+
+function scrollAchievement(){
+  verticalScrollbar.scrollTo(0, 300, 700);
+  // verticalScrollbar.scrollTo(0, 100, 600, {
+  //   callback: () => {},
+  //   easing: easing.easeOutBack,
+  // });
+}
+let scrollbtn = document.querySelector('.look-btn');
+scrollbtn.addEventListener('click', scrollAchievement);
 //menubtn script
 
 

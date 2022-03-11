@@ -298,13 +298,39 @@ header.sticky {
 .text2{
   font-weight: bold;
   font-size: 3em;
+  color:#F2DD8C;
 }
 .text3{
   font-weight: 300;
-  color: grey;
+  color: #fafafaaf;
 }
 .highlight{
-  color: red;
+  color: #F2DD8C;
+}
+.look-btn{
+  color: white;
+  display: block;
+  margin-bottom: 6em;
+  // transition: ease-in-out, 1s;
+  
+  :hover{
+    background-color: white;
+    color: #1a1a1a;
+    transition: ease-in-out, 1s;  
+    } 
+}
+.achievement-txt{
+font-size: 2em;
+font-weight: bold;
+}
+.fa-btn{
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 0.5em 1em 0.5em 1em;
+  // display: flex;
+  float: left;
+  border: 2px solid white;
+  
 }
 .my-img{
 // display: flex;
