@@ -9,14 +9,32 @@
 }
 
 .icon-link {
+  cursor: pointer;
+
   // width: 0.5px;
   size: 1em;
   // padding: 1em;
   padding-bottom: 2em;
+
+
+}
+
+
+
+.social-menu li {
+  :hover {
+    transform: scale(1);
+  }
+
+  display: inline;
 }
 
 .logo-social {
+
   width: 1.6em;
+  padding-bottom: 0.6em;
+
+
 }
 
 //body styling
@@ -340,7 +358,10 @@ a {
 .video_box {
   display: flex;
   justify-content: space-evenly;
+  padding: 1em;
 }
+
+
 
 .achievement-txt {
   font-size: 0.9em;

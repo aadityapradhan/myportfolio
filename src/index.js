@@ -152,7 +152,8 @@ scrollbtn.addEventListener('click', scrollAchievement);
 let bodycontent = document.querySelector(".bodyview");
 var loader = document.querySelector('.loader_container');
 window.addEventListener('load', function () {
-  this.setTimeout(load_preloader, 3000);
+  // this.setTimeout(load_preloader, 3000);
+  load_preloader();
   function load_preloader() {
     loader.style.display = 'none';
     gsap.fromTo(bodycontent, { opacity: 0 }, { opacity: 1, duration: 1 });

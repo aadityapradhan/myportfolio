@@ -13430,7 +13430,8 @@ scrollbtn.addEventListener('click', scrollAchievement); //menubtn script
 var bodycontent = document.querySelector(".bodyview");
 var loader = document.querySelector('.loader_container');
 window.addEventListener('load', function () {
-  this.setTimeout(load_preloader, 3000);
+  // this.setTimeout(load_preloader, 3000);
+  load_preloader();
 
   function load_preloader() {
     loader.style.display = 'none';
@@ -13471,7 +13472,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64095" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59459" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
