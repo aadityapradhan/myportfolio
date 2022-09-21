@@ -21,12 +21,17 @@
 
 
 
-.social-menu li {
-  :hover {
+.social-menu {
+  // cursor: pointer;
+    // margin: 0;
+  float: right;
+  margin-top: 10%;
+  // margin-left: 80%;
+  a:hover {
     transform: scale(1);
   }
 
-  display: inline;
+
 }
 
 .logo-social {
@@ -148,7 +153,7 @@ a {
   // color: rgb(255, 255, 255);
   position: relative;
   // padding: 0em 0em 2em 2em;
-  padding: 25px 15%;
+  padding: 1em 15%;
   height: 100vh;
 }
 
@@ -393,11 +398,23 @@ a {
 
 // }
 
-.my-img {
-  // display: flex;
-  margin-right: 10%;
+
+.nav-items{
   float: right;
-  // z-index: 10000;
+  cursor: pointer;
+  font-size: medium;
+  a{
+    color:rgb(97, 97, 97);
+  }
+  li{
+    display: inline;
+    padding-right: 1em;
+    
+  }
+  li:hover{
+    color:black;
+  }
+  
 }
 
 .text-area {

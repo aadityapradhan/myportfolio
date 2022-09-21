@@ -8,9 +8,10 @@
   size: 1em;
   padding-bottom: 2em; }
 
-.social-menu li {
-  display: inline; }
-  .social-menu li :hover {
+.social-menu {
+  float: right;
+  margin-top: 10%; }
+  .social-menu a:hover {
     transform: scale(1); }
 
 .logo-social {
@@ -85,7 +86,7 @@ a {
 
 .bodysection {
   position: relative;
-  padding: 25px 15%;
+  padding: 1em 15%;
   height: 100vh; }
 
 .cursor {
@@ -247,9 +248,17 @@ a {
   color: #000;
   opacity: 10; }
 
-.my-img {
-  margin-right: 10%;
-  float: right; }
+.nav-items {
+  float: right;
+  cursor: pointer;
+  font-size: medium; }
+  .nav-items a {
+    color: #616161; }
+  .nav-items li {
+    display: inline;
+    padding-right: 1em; }
+  .nav-items li:hover {
+    color: black; }
 
 .text-area {
   padding-top: 5%;
